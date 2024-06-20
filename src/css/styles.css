@@ -141,7 +141,7 @@ body {
   background-color: #111d47;
 }
 
-img {
+.home img {
   width: 729px;
   height: auto;
   border-top-left-radius: 100px;
@@ -154,6 +154,38 @@ img {
   justify-content: center;
   align-items: center;
 }
+
+#servicos h1 {
+  font-size: 48px;
+  color: var(--orange-color);
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid {
+  padding: 25px;
+  display: flex;
+}
+
+.grid img {
+  width: 50px;
+}
+
+.grid h3 {
+  color: var(--orange-color);
+  font-size: 30px;
+}
+
+.grid p {
+  color: var(--white);
+  font-size: 18;
+}
+
 #roadmap {
   display: flex;
   flex-direction: column;
