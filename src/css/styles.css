@@ -1,0 +1,756 @@
+:root {
+  --primary-color: #3a3a3a;
+  --second-color: #626262;
+  --third-color: #464646;
+  --orange-color: #e65100;
+  --blue-color: #1f3a93;
+  --light-gray: #a9a9a9;
+  --white: #ededed;
+}
+@font-face {
+  font-family: "archimoto";
+  src: url("../fonts/Demoarchimotov01Thin-K7DPy.otf") format("opentype"),
+    url("../fonts/Demoarchimotov01Thin-K7DPy.woff2") format("woff2"),
+    url("../fonts/Demoarchimotov01Thin-K7DPy.woff") format("woff");
+}
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+/* ====== */
+/* HEADER */
+/* ====== */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  padding: 10px 20px; /* Ajuste o padding conforme necessário para manter a altura adequada */
+  background-color: var(--third-color);
+  box-shadow: 0 10px 30px #00000050;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+#logo {
+  transition: transform 0.5s ease, color 0.5s ease;
+  cursor: pointer;
+  font-family: "Fonarto", sans-serif;
+  font-size: 1.5rem;
+}
+#logo:hover {
+  transform: scale(1.125);
+  color: var(--white);
+}
+.logo-a {
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--white);
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 5px; /* Pode ajustar para menos espaço se necessário */
+}
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .navbar .links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%; /* Garante que o menu seja exibido abaixo do cabeçalho */
+    left: 0;
+    right: 0;
+    background-color: var(--third-color);
+    z-index: 1000;
+  }
+
+  .navbar .links.active {
+    display: flex;
+  }
+}
+.header ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+  transition: transform 0.5s ease;
+}
+
+.links a {
+  text-decoration: none;
+  color: var(--orange-color);
+  font-weight: bold;
+  font-size: 1.25rem;
+  font-family: "Fonarto", sans-serif;
+  transition: color 0.5s ease;
+}
+.links a:hover {
+  color: var(--white);
+}
+.links li {
+  transition: transform 0.5s ease;
+}
+.links li:hover {
+  transform: scale(1.2);
+}
+
+#logo {
+  color: var(--orange-color);
+}
+
+/* ====== */
+/* CONTAINER  */
+/* ====== */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+/* ====== */
+/* HOME  */
+/* ====== */
+
+.home {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+  width: 100%;
+  margin: 5rem;
+}
+.home-content {
+  display: flex;
+  flex-direction: column;
+  padding-right: 5rem;
+  width: 45rem;
+}
+
+.home-content h4 {
+  font-size: 12px;
+  font-weight: bold;
+  color: var(--orange-color);
+  font-family: "archimoto", Arial, sans-serif;
+}
+
+.home-content h1 {
+  font-size: 45px;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: var(--orange-color);
+  padding-block: 1rem;
+  font-family: "archimoto", Arial, sans-serif;
+}
+
+.home-content p {
+  font-size: 1.2rem;
+  color: var(--white);
+  padding-bottom: 2rem;
+  font-family: "Fonarto", sans-serif;
+}
+.btn-orcamento {
+  background-color: var(--blue-color);
+  color: var(--white);
+  width: 273px;
+  height: 62px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: 3px 3px 10px black;
+  transition: transform 0.5s ease, background-color 0.5s ease;
+}
+.btn-orcamento:hover {
+  transform: scale(1.125);
+  background-color: #111d47;
+}
+
+.home img {
+  width: 729px;
+  height: auto;
+  border-top-left-radius: 100px;
+  box-shadow: 4px 4px 10px;
+}
+/* ====== */
+/* SERVIÇOS */
+/* ====== */
+#servicos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+#servicos h1 {
+  font-size: 48px;
+  color: var(--orange-color);
+  font-family: "Fonarto", sans-serif;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid {
+  padding: 25px;
+  display: flex;
+  gap: 1rem;
+  padding-block: 1rem;
+}
+#grid-sis {
+  font-size: 25px;
+  width: 276px;
+}
+.grid img {
+  width: 120px;
+  align-items: flex-end;
+}
+
+.grid h3 {
+  color: var(--orange-color);
+  font-size: 25px;
+  font-family: "Fonarto", sans-serif;
+  padding-block: 1rem;
+  width: 198px;
+}
+
+.grid p {
+  color: var(--white);
+  font-size: 18px;
+  font-family: "archimoto", Arial, sans-serif;
+  width: 200px;
+  text-align: left;
+}
+/* ====== *
+/*  ROAD MAP */
+/* ====== */
+
+#roadmap {
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.roadmap-title {
+  font-size: 48px;
+  color: var(--orange-color);
+  font-family: "Fonarto", sans-serif;
+}
+.roadmap-subtitle {
+  margin-bottom: 30px;
+  color: var(--white);
+  font-size: 18px;
+}
+.roadmap-map {
+  display: flex;
+  padding: 5rem;
+}
+.roadmap-all {
+  position: flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 1.5rem;
+}
+.roadmap-map {
+  position: relative;
+  margin: 20px 0;
+}
+
+.roadmap-line {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  top: 35%; /* Ajuste este valor conforme necessário para alinhar com o centro dos ícones */
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 0;
+}
+
+.roadmap-all {
+  position: relative;
+  z-index: 1;
+}
+.roadmap-icons {
+  width: 100px;
+  height: 100px;
+  background-color: var(--third-color);
+  border-radius: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.roadmap-icons img {
+  width: 50%;
+  height: auto;
+}
+
+.roadmap-text h3 {
+  margin: 0 0 10px 0;
+  font-size: 24px;
+  color: var(--orange-color);
+  font-family: "archimoto", Arial, sans-serif;
+}
+
+.roadmap-text p {
+  margin: 0;
+  font-size: 16px;
+  color: #ccc;
+  padding-inline: 3rem;
+}
+
+/* ====== */
+/* PORTIFÓLIO */
+/* ====== */
+.title-portifolio {
+  font-size: 48px;
+  color: var(--orange-color);
+  font-family: "Fonarto", sans-serif;
+  font-weight: 300;
+}
+.portfolio-subtitle {
+  margin-bottom: 30px;
+  color: var(--white);
+  font-size: 18px;
+  font-family: "archimoto", Arial, sans-serif;
+}
+.portfolio-section {
+  background: var(--second-color);
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.container-portifolio {
+  width: 90%;
+  margin: auto;
+  background: var(--second-color);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.tab-links {
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.tab-link {
+  font-family: "archimoto", Arial, sans-serif;
+  font-size: 18px;
+  width: 100%;
+  padding: 10px;
+  background: var(--second-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  border-bottom: 2px solid var(--light-gray);
+}
+
+.tab-link.active {
+  background: var(--second-color);
+  color: white;
+  border-bottom: 2px solid var(--blue-color);
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
+  gap: 15px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.portfolio-item {
+  margin: 1rem;
+  background: #dee5ed;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.hidden {
+  display: none;
+}
+
+.load-more {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* ====== */
+/* ORÇAMENTO */
+/* ====== */
+.orcamento-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: var(--white);
+  font-family: Arial, sans-serif;
+}
+#orcamento {
+  background-color: var(--white);
+}
+#orcamento .title-orcamento {
+  font-size: 40px;
+  text-transform: uppercase;
+  color: var(--blue-color);
+  padding-block: 1rem;
+  font-family: "Fonarto", Arial, sans-serif;
+  text-align: center;
+}
+.orcamento-form,
+.orcamento-info {
+  flex: 1;
+  margin: 10px;
+  padding: 20px;
+  background-color: #eee;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.orcamento-form h2,
+.orcamento-info h2 {
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  height: 100px; /* Ajuste conforme necessário */
+}
+
+#orcamento button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#orcamento button:hover {
+  background-color: #45a049;
+}
+
+.orcamento-info p {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.fa-phone,
+.fa-map-marker-alt,
+.fa-instagram,
+.fa-envelope {
+  margin-right: 10px;
+}
+
+/* ====== */
+/* FOOTER */
+/* ====== */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  font-family: "archimoto", Arial, sans-serif;
+
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 50px;
+  letter-spacing: 2px;
+  line-height: 1.5rem;
+  gap: 1rem;
+}
+
+.logo-section {
+  text-align: center;
+}
+.footer-section {
+  flex: 1;
+}
+
+.footer-section h2,
+.footer-section h4 {
+  color: #e65100;
+  font-family: "Fonarto", sans-serif;
+  padding-inline: 2rem;
+  text-align: center;
+}
+
+.footer-section p,
+.footer-section ul {
+  margin: 10px 0;
+  padding-inline: 1.5rem;
+  text-align: center;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+}
+
+.social-icons a {
+  color: #fff;
+  margin-right: 10px;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #e65100;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 10px 0;
+  border-top: 1px solid #444;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+.footer-policy a {
+  color: #ccc;
+  margin-right: 20px;
+  transition: color 0.3s;
+}
+
+.footer-policy a:hover {
+  color: #e65100;
+}
+
+/* Adicionando media queries para ajustar o layout para dispositivos menores */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .header ul {
+    flex-direction: column;
+    width: 100%;
+    display: none; /* Esconde os links até que o menu hambúrguer seja clicado */
+    position: absolute;
+    background-color: var(--third-color);
+    top: 60px;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+
+  .header ul li {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .home img,
+  .home-content {
+    width: 90%;
+    padding-right: 0;
+  }
+
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .roadmap-map,
+  .portfolio-grid {
+    flex-direction: column;
+  }
+
+  .orcamento-container {
+    flex-direction: column;
+  }
+}
+
+/*  RESPONSIVIDADE  */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .header ul {
+    flex-direction: column;
+    width: 100%;
+    display: none; /* Esconde os links até que o menu hambúrguer seja clicado */
+    position: absolute;
+    background-color: var(--third-color);
+    top: 60px;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+
+  .header ul li {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .home img,
+  .home-content {
+    width: 90%;
+    padding-right: 0;
+  }
+
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .roadmap-map,
+  .portfolio-grid {
+    flex-direction: column;
+  }
+
+  .orcamento-container {
+    flex-direction: column;
+  }
+}
+@media (max-width: 1024px) {
+  .home img,
+  .home-content {
+    width: 80%;
+    padding-right: 0;
+  }
+
+  .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .header ul {
+    flex-direction: column;
+    width: 100%;
+    display: none; /* Esconde os links até que o menu hambúrguer seja clicado */
+    position: absolute;
+    background-color: var(--third-color);
+    top: 60px;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+
+  .header ul li {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .home img,
+  .home-content {
+    width: 90%;
+    padding-right: 0;
+  }
+
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .roadmap-map,
+  .portfolio-grid {
+    flex-direction: column;
+  }
+
+  .orcamento-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-content h1 {
+    font-size: 24px; /* Ajuste para uma visualização melhor em dispositivos móveis pequenos */
+  }
+
+  .home-content p {
+    font-size: 1rem; /* Redução do tamanho do texto para melhor leitura em telas pequenas */
+  }
+
+  .btn-orcamento {
+    width: 100%; /* Botão se ajusta para ocupar a largura total em dispositivos muito pequenos */
+    font-size: 1.2rem; /* Redução do tamanho da fonte do botão para economia de espaço */
+  }
+
+  .roadmap-icons {
+    width: 80px; /* Redução do tamanho dos ícones na seção do roadmap */
+    height: 80px; /* Mantém a proporção dos ícones */
+  }
+
+  .roadmap-text h3,
+  .roadmap-text p {
+    font-size: 14px; /* Ajuste no tamanho do texto para melhor legibilidade em telas menores */
+  }
+
+  .footer-content {
+    flex-direction: column; /* Ajuste na disposição dos itens do rodapé para uma coluna em telas pequenas */
+    padding: 0 20px; /* Padding reduzido para ajuste lateral */
+  }
+}
