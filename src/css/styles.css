@@ -13,13 +13,9 @@
     url("../fonts/Demoarchimotov01Thin-K7DPy.woff2") format("woff2"),
     url("../fonts/Demoarchimotov01Thin-K7DPy.woff") format("woff");
 }
-<<<<<<< HEAD
-
-=======
 html {
   scroll-behavior: smooth;
 }
->>>>>>> master
 * {
   margin: 0;
   padding: 0;
@@ -33,27 +29,17 @@ body {
   justify-content: center;
   flex-direction: column;
 }
-<<<<<<< HEAD
-
-=======
 /* ====== */
 /* HEADER */
 /* ====== */
->>>>>>> master
 .header {
   display: flex;
   align-items: center;
   justify-content: space-around;
   width: 100%;
-<<<<<<< HEAD
-  padding: 1rem;
-  background-color: var(--third-color);
-  box-shadow: 0px 10px 30px #00000050;
-=======
   padding: 10px 20px; /* Ajuste o padding conforme necessário para manter a altura adequada */
   background-color: var(--third-color);
   box-shadow: 0 10px 30px #00000050;
->>>>>>> master
   position: fixed;
   top: 0;
   z-index: 999;
@@ -62,10 +48,7 @@ body {
   transition: transform 0.5s ease, color 0.5s ease;
   cursor: pointer;
   font-family: "Fonarto", sans-serif;
-<<<<<<< HEAD
-=======
   font-size: 1.5rem;
->>>>>>> master
 }
 #logo:hover {
   transform: scale(1.125);
@@ -73,10 +56,6 @@ body {
 }
 .logo-a {
   text-decoration: none;
-<<<<<<< HEAD
-}
-
-=======
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -110,7 +89,6 @@ body {
     display: flex;
   }
 }
->>>>>>> master
 .header ul {
   display: flex;
   list-style: none;
@@ -139,35 +117,26 @@ body {
 #logo {
   color: var(--orange-color);
 }
-<<<<<<< HEAD
-=======
 
 /* ====== */
 /* CONTAINER  */
 /* ====== */
->>>>>>> master
 .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
 }
-<<<<<<< HEAD
-=======
 /* ====== */
 /* HOME  */
 /* ====== */
 
->>>>>>> master
 .home {
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding-top: 3.5rem;
-<<<<<<< HEAD
-=======
   padding-bottom: 3.5rem;
->>>>>>> master
   width: 100%;
   margin: 5rem;
 }
@@ -223,31 +192,21 @@ body {
   border-top-left-radius: 100px;
   box-shadow: 4px 4px 10px;
 }
-<<<<<<< HEAD
-
-=======
 /* ====== */
 /* SERVIÇOS */
 /* ====== */
->>>>>>> master
 #servicos {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-<<<<<<< HEAD
-=======
   margin-bottom: 5rem;
->>>>>>> master
 }
 
 #servicos h1 {
   font-size: 48px;
   color: var(--orange-color);
-<<<<<<< HEAD
-=======
   font-family: "Fonarto", sans-serif;
->>>>>>> master
 }
 
 .wrapper {
@@ -260,12 +219,6 @@ body {
 .grid {
   padding: 25px;
   display: flex;
-<<<<<<< HEAD
-}
-
-.grid img {
-  width: 50px;
-=======
   gap: 1rem;
   padding-block: 1rem;
 }
@@ -276,29 +229,18 @@ body {
 .grid img {
   width: 120px;
   align-items: flex-end;
->>>>>>> master
 }
 
 .grid h3 {
   color: var(--orange-color);
-<<<<<<< HEAD
-  font-size: 30px;
-=======
   font-size: 25px;
   font-family: "Fonarto", sans-serif;
   padding-block: 1rem;
   width: 198px;
->>>>>>> master
 }
 
 .grid p {
   color: var(--white);
-<<<<<<< HEAD
-  font-size: 18;
-}
-
-#roadmap {
-=======
   font-size: 18px;
   font-family: "archimoto", Arial, sans-serif;
   width: 200px;
@@ -330,19 +272,10 @@ body {
 }
 .roadmap-all {
   position: flex;
->>>>>>> master
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-<<<<<<< HEAD
-}
-#orcamento form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-=======
   margin-bottom: 20px;
   gap: 1.5rem;
 }
@@ -753,7 +686,7 @@ textarea {
   .header ul {
     flex-direction: column;
     width: 100%;
-    display: none; /* Esconde os links até que o menu hambúrguer seja clicado */
+    display: none;
     position: absolute;
     background-color: var(--third-color);
     top: 60px;
@@ -794,31 +727,30 @@ textarea {
 
 @media (max-width: 480px) {
   .home-content h1 {
-    font-size: 24px; /* Ajuste para uma visualização melhor em dispositivos móveis pequenos */
+    font-size: 24px;
   }
 
   .home-content p {
-    font-size: 1rem; /* Redução do tamanho do texto para melhor leitura em telas pequenas */
+    font-size: 1rem;
   }
 
   .btn-orcamento {
-    width: 100%; /* Botão se ajusta para ocupar a largura total em dispositivos muito pequenos */
-    font-size: 1.2rem; /* Redução do tamanho da fonte do botão para economia de espaço */
+    width: 100%;
+    font-size: 1.2rem;
   }
 
   .roadmap-icons {
-    width: 80px; /* Redução do tamanho dos ícones na seção do roadmap */
-    height: 80px; /* Mantém a proporção dos ícones */
+    width: 80px;
+    height: 80px;
   }
 
   .roadmap-text h3,
   .roadmap-text p {
-    font-size: 14px; /* Ajuste no tamanho do texto para melhor legibilidade em telas menores */
+    font-size: 14px;
   }
 
   .footer-content {
-    flex-direction: column; /* Ajuste na disposição dos itens do rodapé para uma coluna em telas pequenas */
-    padding: 0 20px; /* Padding reduzido para ajuste lateral */
+    flex-direction: column;
+    padding: 0 20px;
   }
->>>>>>> master
 }
