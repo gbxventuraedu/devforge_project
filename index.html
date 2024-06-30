@@ -3,10 +3,20 @@
 
 <head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
   <meta charset="UTF-8" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>DevForge</title>
+
+  <!-- Box Icons CSS-->
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+  <!-- Custom Css -->
   <link rel="stylesheet" href="src/css/styles.css" />
+
+  <!-- Scroll Reveal-->
   <script src="https://unpkg.com/scrollreveal"></script>
   <script src="path/to/scrollreveal.min.js"></script>
 
@@ -26,7 +36,7 @@
       </ul>
     </header>
 
-    <div class="home" >
+    <div class="home">
       <div class="home-content">
         <h4 class="elemento">Criação de Sites Profissionais</h4>
         <!-- Subtítulo -->
@@ -159,31 +169,65 @@
     </section>
 
     <!--PORTIFÍLIO INICIO-->
-    <div id="portifolio"></div>
-    <section class="portfolio-section">
-      <div class="container-portifolio ">
-        <h2 class="title-portifolio">Portfólio</h2>
-        <p class="portfolio-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
-          incididunt ut labore et.</p>
-        <div class="tab-links">
-          <button class="tab-link active">Lorem10</button>
-          <button class="tab-link">Lorem10</button>
-          <button class="tab-link">Lorem10</button>
-          <button class="tab-link">Lorem10</button>
+    <section class="portfolio" id="portfolio">
+      <div class="main-text">
+        <p>Portifólio</p>
+        <h2>Ultimos <span>Projetos</span></h2>
+      </div>
+      <div class="portfolio-content">
+        <div class="row">
+          <img src="src/img/portfolio6.jpg" alt="portfolio">
+          <div class="layer">
+            <h5>Projeto Web</h5>
+            <p>Lorem, ipsum dolor sit amet consectetur</p>
+            </p>
+            <a href="#contact"><i class="bx bx-link-external"></i></a>
+          </div>
         </div>
-        <div class="portfolio-grid">
-          <!-- Itens visíveis inicialmente -->
-          <div class="portfolio-item">Titulo</div>
-          <div class="portfolio-item">TituloTitulo</div>
-          <div class="portfolio-item">Titulo</div>
-          <div class="portfolio-item">Titulo</div>
-          <!-- Itens ocultos inicialmente -->
-          <div class="portfolio-item hidden">Titulo</div>
-          <div class="portfolio-item hidden">TituloTitulo</div>
-          <div class="portfolio-item hidden">Titulo</div>
-          <div class="portfolio-item hidden">Titulo</div>
+        <div class="row">
+          <img src="src/img/portfolio5.jpg" alt="portfolio-2">
+          <div class="layer">
+            <h5>Projeto Web</h5>
+            <p>Lorem, ipsum dolor sit amet consectetur</p>
+            <a href="#contact"><i class="bx bx-link-external"></i></a>
+          </div>
         </div>
-        <button class="load-more">Ver mais</button>
+        <div class="row">
+          <img src="src/img/portfolio1.jpg" alt="portfolio-3">
+          <div class="layer">
+            <h5>Projeto Web</h5>
+            <p>Lorem, ipsum dolor sit amet consectetur</p>
+            </p>
+            <a href="#contact"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+        <div class="row">
+          <img src="src/img/portfolio2.jpg" alt="portfolio-4">
+          <div class="layer">
+            <h5>Projeto Web</h5>
+            <p>Lorem, ipsum dolor sit amet consectetur</p>
+            </p>
+            <a href="#contact"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+        <div class="row">
+          <img src="src/img/portfolio3.jpg" alt="portfolio-4">
+          <div class="layer">
+            <h5>Projeto Web</h5>
+            <p>Lorem, ipsum dolor sit amet consectetur</p>
+            </p>
+            <a href="#contact"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+        <div class="row">
+          <img src="src/img/portfolio4.jpg" alt="portfolio-4">
+          <div class="layer">
+            <h5>Projeto Web</h5>
+            <p>Lorem, ipsum dolor sit amet consectetur</p>
+            </p>
+            <a href="#contact"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -296,49 +340,54 @@
   </div>
   </footer>
 
+  <!-- WhatsApp Icon -->
+   <a href="#" class="whats-link">
+    <i class='bx bxl-whatsapp' id="icon"></i>
+   </a>
+
   <script src="src/script/scripts.js"></script>
   <script>
-ScrollReveal().reveal('.elemento', {
+    ScrollReveal().reveal('.elemento', {
 
-duration: 1000,  
-origin: 'left',  
-distance: '50px',  
-reset: true 
-})
-const scrollRevealOption = {
-  distance: "50px",
-  origin: "left",
-  duration: 1000,
-}
-ScrollReveal().reveal(".elemento2",{
-  ...scrollRevealOption,
-  delay: 500,
-})
-ScrollReveal().reveal(".elemento3",{
-  ...scrollRevealOption,
-  delay: 1000,
-})
-ScrollReveal().reveal(".elemento4",{
-  ...scrollRevealOption,
-  delay: 1500,
-})
-ScrollReveal().reveal(".elemento5",{
-  ...scrollRevealOption,
-  delay: 2000,
-})
-ScrollReveal().reveal(".elemento6",{
-  ...scrollRevealOption,
-  delay: 2500,
-})
-ScrollReveal().reveal(".elemento7",{
-  ...scrollRevealOption,
-  delay: 3000,
-})
-ScrollReveal().reveal(".elementox",{
-  ...scrollRevealOption,
-  delay: 1000,
-  origin: "bottom",
-})
+      duration: 1000,
+      origin: 'left',
+      distance: '50px',
+      reset: true
+    })
+    const scrollRevealOption = {
+      distance: "50px",
+      origin: "left",
+      duration: 1000,
+    }
+    ScrollReveal().reveal(".elemento2", {
+      ...scrollRevealOption,
+      delay: 500,
+    })
+    ScrollReveal().reveal(".elemento3", {
+      ...scrollRevealOption,
+      delay: 1000,
+    })
+    ScrollReveal().reveal(".elemento4", {
+      ...scrollRevealOption,
+      delay: 1500,
+    })
+    ScrollReveal().reveal(".elemento5", {
+      ...scrollRevealOption,
+      delay: 2000,
+    })
+    ScrollReveal().reveal(".elemento6", {
+      ...scrollRevealOption,
+      delay: 2500,
+    })
+    ScrollReveal().reveal(".elemento7", {
+      ...scrollRevealOption,
+      delay: 3000,
+    })
+    ScrollReveal().reveal(".elementox", {
+      ...scrollRevealOption,
+      delay: 1000,
+      origin: "bottom",
+    })
   </script>
 </body>
 
