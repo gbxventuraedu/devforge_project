@@ -256,8 +256,12 @@ header.sticky {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 5rem;
+  margin-bottom: 2.5rem;
   color: white;
+}
+#servicos .title-servicos {
+  padding-block: 2rem;
+  font-size: 2.5rem;
 }
 
 .titulo-Servicos {
@@ -382,11 +386,20 @@ header.sticky {
   width: 18.75rem;
   height: 25.75rem;
   display: flex;
+
   justify-content: center;
   align-items: center;
   background: #000;
   margin: 40px;
   transition: 0.5s;
+}
+.titulo-roadmap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .road__box:hover {
@@ -413,7 +426,7 @@ header.sticky {
 }
 
 .road__box:before {
-  content: '';
+  content: "";
   position: absolute;
   top: -2px;
   left: -2px;
@@ -424,7 +437,7 @@ header.sticky {
 }
 
 .road__box:after {
-  content: '';
+  content: "";
   position: absolute;
   top: -2px;
   left: -2px;
@@ -445,10 +458,9 @@ header.sticky {
   background: linear-gradient(235deg, #ff005e, #010615, #fbff00);
 }
 
-
 .road__box:nth-child(3):before,
 .road__box:nth-child(3):after {
-  background: linear-gradient(235deg, #772aff, #010615, #2196F3);
+  background: linear-gradient(235deg, #772aff, #010615, #2196f3);
 }
 
 .road__box .road__content {
@@ -489,11 +501,8 @@ section.roadmap {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  min-height: 70vh;
+  min-height: 80vh;
 }
-
-
-
 
 /* ====== */
 /* PORTIFÓLIO */
@@ -539,13 +548,13 @@ section.portfolio .main-text h2 {
 .portfolio-content .row {
   position: relative;
   overflow: hidden;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   cursor: pointer;
 }
 
 .portfolio-content .row img {
   width: 100%;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   display: block;
   transition: transform 0.5s;
 }
@@ -584,16 +593,16 @@ section.portfolio .main-text h2 {
 
 .layer i {
   color: var(--orange-color);
-  margin-top: 20px;
-  font-size: 20px;
+  margin-top: 1.25rem;
+  font-size: 1.25rem;
   background: var(--white);
-  width: 60px;
-  height: 60px;
+  width: 3.75rem;
+  height: 3.75rem;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  border: 1px solid var(--orange-color);
+  border: 0.0625rem solid var(--orange-color);
 }
 
 .row:hover img {
@@ -604,7 +613,9 @@ section.portfolio .main-text h2 {
   height: 100%;
 }
 
-/*============== Contact Section ===============*/
+/* ====== */
+/* CONTACT FORMS */
+/* ====== */
 
 .contact {
   background: #000;
@@ -650,33 +661,33 @@ section.portfolio .main-text h2 {
   display: block;
   color: var(--white);
   font-size: 0.875rem;
-  transition: all .45s ease;
+  transition: all 0.45s ease;
 }
 
 .list li a:hover {
   color: var(--orange-color);
-  transform: translateX(5px);
+  transform: translateX(0.3125rem);
 }
 
 .list li a {
   display: block;
   color: var(--white);
-  font-size: 14px;
-  transition: all .45s ease;
+  font-size: 0.875rem;
+  transition: all 0.45s ease;
 }
 
 .contact-icons i {
-  height: 45px;
-  width: 45px;
+  height: 2.8125rem;
+  width: 2.8125rem;
   background: var(--orange-color);
   color: var(--white);
   font-size: 22px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: 8px;
-  margin-right: 15px;
-  transition: all .45s ease;
+  border-radius: 0.5rem;
+  margin-right: 0.9375rem;
+  transition: all 0.45s ease;
 }
 
 .contact-icons i:hover {
@@ -688,32 +699,31 @@ section.portfolio .main-text h2 {
   position: ralative;
 }
 
-.contact-form form input, textarea, #select {
+.contact-form form input,
+textarea,
+#select {
   width: 100%;
-  padding: 14px;
+  padding: 0.875rem;
   background: #000;
   color: var(--white);
   border: 1px solid var(--orange-color);
   outline: none;
-  font-size: 15px;
-  border-radius: 8px;
-  margin-bottom: 10px;
-  
+  font-size: 0.9375rem;
+  border-radius: 0.5rem;
+  margin-bottom: 0.625rem;
 }
-
 
 .contact-form textarea {
   resize: none;
-  height: 240px;
+  height: 15rem;
 }
-
 
 .contact-form .submit {
   display: inline-block;
-  font-size: 16px;
+  font-size: 1rem;
   background: var(--orange-color);
-  color: var(--white);  
-  transition: all .45s ease;
+  color: var(--white);
+  transition: all 0.45s ease;
 }
 
 .contact-form .submit:hover {
@@ -721,112 +731,73 @@ section.portfolio .main-text h2 {
   cursor: pointer;
 }
 
-
 section.contact {
   padding: 6.875rem 3% 3.75rem;
 }
-
 
 /* ====== */
 /* FOOTER */
 /* ====== */
 .footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px 0;
-  font-family: "archimoto", Arial, sans-serif;
-
+  position: relative;
   width: 100%;
-}
-
-.footer-content {
+  background: #000;
+  min-height: 100px;
+  padding: 20px 50px;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 0 50px;
-  letter-spacing: 2px;
-  line-height: 1.5rem;
-  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-
-.logo-section {
-  text-align: center;
-}
-
-.footer-section {
-  flex: 1;
-}
-
-.footer-section h2,
-.footer-section h4 {
-  color: #e65100;
-  font-family: "Fonarto", sans-serif;
-  padding-inline: 2rem;
-  text-align: center;
-}
-
-.footer-section p,
-.footer-section ul {
+.social-icon,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 10px 0;
-  padding-inline: 1.5rem;
-  text-align: center;
+  flex-wrap: wrap;
 }
 
-.footer-section ul {
-  list-style-type: none;
-  padding: 0;
+.social-icon__item,
+.menu__item {
+  list-style: none;
 }
 
-.footer-section ul li {
-  margin-bottom: 5px;
-}
-
-.social-icons a {
+.social-icon__link {
+  font-size: 2rem;
   color: #fff;
-  margin-right: 10px;
-  font-size: 16px;
-  transition: color 0.3s;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social-icon__link:hover {
+  transform: translateY(-10px);
 }
 
-.social-icons a:hover {
-  color: #e65100;
-}
-
-.footer-bottom {
-  text-align: center;
-  padding: 10px 0;
-  border-top: 1px solid #444;
-  margin-top: 20px;
-}
-
-.footer-bottom p {
-  margin: 0;
-}
-
-.footer-policy a {
-  color: var(--white);
-  margin-right: 20px;
-  transition: color 0.3s;
-}
-
-.footer-section a {
+.menu__link {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
   text-decoration: none;
-  color: var(--white);
+  opacity: 0.75;
+  font-weight: 300;
 }
 
-.footer-policy a:hover {
-  color: var(--orange-color);
+.menu__link:hover {
+  opacity: 1;
 }
 
-.footer li {
-  transition: transform 0.4s ease, color 0.4s ease;
+.footer p {
+  color: #fff;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
 }
 
-.footer li:hover {
-  transform: scale(1.09);
-  color: var(--orange-color);
-}
-
+/* WHATSAP ICON STYLE */
 .whats-link {
   position: fixed;
   width: 3.75rem;
@@ -840,13 +811,13 @@ section.contact {
   font-size: 1.875rem;
   box-shadow: 0.0625rem 0.0625rem 0.125rem #888;
   z-index: 1000;
-  transition: transform .45s ease;
+  transition: transform 0.45s ease;
 }
 
 #icon {
   display: flex;
   margin: 15.5px;
-  transition: transform .45s ease;
+  transition: transform 0.45s ease;
 }
 
 .whats-link:hover {
@@ -855,195 +826,6 @@ section.contact {
 
 .whats-link:hover #icon {
   transform: scale(1.5);
-
-}
-
-/* Adicionando media queries para ajustar o layout para dispositivos menores */
-@media (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .header ul {
-    flex-direction: column;
-    width: 100%;
-    display: none;
-    /* Esconde os links até que o menu hambúrguer seja clicado */
-    position: absolute;
-    background-color: var(--third-color);
-    top: 60px;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-  }
-
-  .header ul li {
-    text-align: center;
-    padding: 10px;
-  }
-
-  .hamburger {
-    display: block;
-    cursor: pointer;
-  }
-
-  .home img,
-  .home-content {
-    width: 90%;
-    padding-right: 0;
-  }
-
-  .wrapper {
-    grid-template-columns: 1fr;
-  }
-
-  .roadmap-map,
-  .portfolio-grid {
-    flex-direction: column;
-  }
-
-  .orcamento-container {
-    flex-direction: column;
-  }
-
-  .roadmap-line {
-    display: none;
-  }
 }
 
 /*  RESPONSIVIDADE  */
-@media (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .header ul {
-    flex-direction: column;
-    width: 100%;
-    display: none;
-    /* Esconde os links até que o menu hambúrguer seja clicado */
-    position: absolute;
-    background-color: var(--third-color);
-    top: 60px;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-  }
-
-  .header ul li {
-    text-align: center;
-    padding: 10px;
-  }
-
-  .home img,
-  .home-content {
-    width: 90%;
-    padding-right: 0;
-  }
-
-  .wrapper {
-    grid-template-columns: 1fr;
-  }
-
-  .roadmap-map,
-  .portfolio-grid {
-    flex-direction: column;
-  }
-
-  .orcamento-container {
-    flex-direction: column;
-  }
-}
-
-@media (max-width: 1024px) {
-
-  .home img,
-  .home-content {
-    width: 80%;
-    padding-right: 0;
-  }
-
-  .wrapper {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .header ul {
-    flex-direction: column;
-    width: 100%;
-    display: none;
-    position: absolute;
-    background-color: var(--third-color);
-    top: 60px;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-  }
-
-  .header ul li {
-    text-align: center;
-    padding: 10px;
-  }
-
-  .hamburger {
-    display: block;
-    cursor: pointer;
-  }
-
-  .home img,
-  .home-content {
-    width: 90%;
-    padding-right: 0;
-  }
-
-  .wrapper {
-    grid-template-columns: 1fr;
-  }
-
-  .roadmap-map,
-  .portfolio-grid {
-    flex-direction: column;
-  }
-
-  .orcamento-container {
-    flex-direction: column;
-  }
-}
-
-@media (max-width: 480px) {
-  .home-content h1 {
-    font-size: 24px;
-  }
-
-  .home-content p {
-    font-size: 1rem;
-  }
-
-  .btn-orcamento {
-    width: 100%;
-    font-size: 1.2rem;
-  }
-
-  .roadmap-icons {
-    width: 80px;
-    height: 80px;
-  }
-
-  .roadmap-text h3,
-  .roadmap-text p {
-    font-size: 14px;
-  }
-
-  .footer-content {
-    flex-direction: column;
-    padding: 0 20px;
-  }
-}

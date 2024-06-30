@@ -32,7 +32,7 @@
         <li><a href="#servicos">Serviços</a></li>
         <li><a href="#roadmap">Road Map</a></li>
         <li><a href="#portifolio">Portifólio</a></li>
-        <li><a href="#orcamento">Orçamento</a></li>
+        <li><a href="#contact">Orçamento</a></li>
       </ul>
     </header>
 
@@ -55,7 +55,7 @@
     </div>
 
     <section id="servicos">
-      <h1 class="elemento">Serviços</h1>
+      <h1 class="elemento title-servicos">Serviços</h1>
       <div class="container2">
         <div class="titulo1 elemento2">
           <div class="foto"><img src="src/img/img-1.svg" alt="" /></div>
@@ -115,12 +115,15 @@
         </div>
       </div>
     </section>
-
     <!-- Inicio ROADMAP -->
-    <section class="roadmap" id="roadmap">
+    <div class="titulo-roadmap">
+      <h1 style="color: white;">Road<span>Map</span></h1>
+    </div>
+    <section class="roadmap elemento" id="roadmap">
+
       <div class="road__box">
         <div class="imgBx">
-          <img src="src/img/img1.jpeg">
+          <img src="src/img/card1.png">
         </div>
         <div class="road__content">
           <h2>Escolha Seu Website<br><span>Sites sob Medida</span></h2>
@@ -128,7 +131,7 @@
       </div>
       <div class="road__box ">
         <div class="imgBx">
-          <img src="src/img/img1.jpeg">
+          <img src="src/img/card2.png">
         </div>
         <div class="road__content">
           <h2>Adicionais<br><span>Entre em Contato</span></h2>
@@ -136,7 +139,7 @@
       </div>
       <div class="road__box">
         <div class="imgBx">
-          <img src="src/img/img1.jpeg">
+          <img src="src/img/card3.png">
         </div>
         <div class="road__content">
           <h2>Pronto pra Começar<br><span>Entre em Contato</span></h2>
@@ -145,7 +148,7 @@
     </section>
 
     <!--PORTIFÍLIO INICIO-->
-    <section class="portfolio" id="portfolio">
+    <section class="portfolio" id="portifolio">
       <div class="main-text">
         <p>Portifólio</p>
         <h2>Ultimos <span>Projetos</span></h2>
@@ -232,7 +235,6 @@
           <input type="email" name="email" placeholder="Digite seu E-mail" required>
           <input type="text" name="cargo" placeholder="Digite seu Cargo" required>
           <input type="text" name="phone" placeholder="Digite a Quantidade de Funcionarios" required>
-          <input type="text" name="phone" placeholder="Quem faz o mkt digital para sua empresa" required>
           <select required id="select">
             <option value="">Quem faz o mkt digital para sua empresa?</option>
             <option value="interno">Equipe Interna</option>
@@ -250,120 +252,33 @@
 
     <!-- FOOTER  -->
     <footer class="footer">
-      <div class="footer-content">
-        <div class="footer-section logo-section">
-          <h2><code>
-              <</code>DevForge <code>/>
-            </code></h2>
-          <p>OUR VISION IS TO PROVIDE CONVENIENCE AND HELP INCREASE YOUR SALES BUSINESS.</p>
-          <div class="social-icons">
-            <a href="https://www.facebook.com/devforge" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.twitter.com/devforge" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com/devforge" target="_blank"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-        <div class="footer-section">
-          <h4>Sobre</h4>
-          <ul>
-            <a href="">
-              <li>Lorem</li>
-            </a>
-            <a href="">
-              <li>Lorem</li>
-            </a>
-            <a href="">
-              <li>Lorem</li>
-            </a>
-            <a href="">
-              <li>Lorem</li>
-            </a>
-          </ul>
-        </div>
-        <div class="footer-section">
-          <h4>Comunidade</h4>
-          <ul>
-            <a href="">
-              <li>Lorem</li>
-            </a>
-            <a href="">
-              <li>Lorem</li>
-            </a>
-            <a href="">
-              <li>Lorem</li>
-            </a>
-            <a href="">
-              <li>Lorem</li>
-            </a>
-          </ul>
-        </div>
-        <div class="footer-section">
-          <h4>Social</h4>
-          <ul>
-            <li>Instagram</li>
-            <li>Twitter</li>
-            <li>Facebook</li>
-          </ul>
-        </div>
-      </div>
-  </div>
-  <div class="footer-bottom">
-    <p>©2024 DevForge. All rights reserved</p>
-    <div class="footer-policy">
-      <a href="#">Privacy & Policy</a>
-      <a href="#">Terms & Condition</a>
-    </div>
-  </div>
-  </footer>
+      <ul class="social-icon">
+        <li class="social-icon__item"><a class="social-icon__link" href="#">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a></li>
+        <li class="social-icon__item"><a class="social-icon__link" href="#">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a></li>
+        <li class="social-icon__item"><a class="social-icon__link" href="#">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a></li>
+        <li class="social-icon__item"><a class="social-icon__link" href="#">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a></li>
+      </ul>
+
+      <p>&copy;2024 DevForge | All Rights Reserved</p>
+    </footer>
 
   <!-- WhatsApp Icon -->
   <a href="#" class="whats-link">
     <i class='bx bxl-whatsapp' id="icon"></i>
   </a>
-
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script src="src/script/scripts.js"></script>
-  <script>
-    ScrollReveal().reveal('.elemento', {
+  <script src="src/script/scrollreveal.js"></script>
 
-      duration: 1000,
-      origin: 'left',
-      distance: '50px',
-      reset: true
-    })
-    const scrollRevealOption = {
-      distance: "50px",
-      origin: "left",
-      duration: 1000,
-    }
-    ScrollReveal().reveal(".elemento2", {
-      ...scrollRevealOption,
-      delay: 500,
-    })
-    ScrollReveal().reveal(".elemento3", {
-      ...scrollRevealOption,
-      delay: 1000,
-    })
-    ScrollReveal().reveal(".elemento4", {
-      ...scrollRevealOption,
-      delay: 1500,
-    })
-    ScrollReveal().reveal(".elemento5", {
-      ...scrollRevealOption,
-      delay: 2000,
-    })
-    ScrollReveal().reveal(".elemento6", {
-      ...scrollRevealOption,
-      delay: 2500,
-    })
-    ScrollReveal().reveal(".elemento7", {
-      ...scrollRevealOption,
-      delay: 3000,
-    })
-    ScrollReveal().reveal(".elementox", {
-      ...scrollRevealOption,
-      delay: 1000,
-      origin: "bottom",
-    })
-  </script>
 </body>
 
 </html>
