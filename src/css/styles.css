@@ -694,6 +694,7 @@ section.portfolio .main-text h2 {
 .contact-icons i:hover {
   background: var(--orange-color);
   color: var(--white);
+  transform: scale(1.1);
 }
 
 .contact-form form {
