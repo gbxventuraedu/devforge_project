@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:ital,wght@0,700;0,800;0,900;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:ital,wght@0,700;0,800;0,900;1,700;1,800;1,900&display=swap');
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
 
 :root {
   --primary-color: #2a2a2a;
@@ -21,7 +21,7 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   text-decoration: none;
   list-style: none;
   scroll-behavior: smooth;
@@ -34,7 +34,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .container {
@@ -122,7 +122,7 @@ span {
 }
 
 ul li a::before {
-  content: "";
+  content: '';
   width: 0px;
   height: 0.1875rem;
   background: #eb091c;
@@ -134,7 +134,7 @@ ul li a::before {
 }
 
 ul li a::after {
-  content: "";
+  content: '';
   width: 0px;
   height: 0.1875rem;
   background: #eb091c;
@@ -204,7 +204,7 @@ header.sticky {
 .home-content h4 {
   font-size: 1.5rem;
   color: var(--orange-color);
-  font-family: "Poppins", Arial, sans-serif;
+  font-family: 'Poppins', Arial, sans-serif;
   text-transform: none;
 }
 
@@ -276,9 +276,9 @@ header.sticky {
   gap: 2.1875rem 1.25rem;
   grid-auto-flow: row;
   grid-template-areas:
-    "titulo1 titulo2 titulo3"
-    "titulo4 titulo5 titulo6"
-    ". . .";
+    'titulo1 titulo2 titulo3'
+    'titulo4 titulo5 titulo6'
+    '. . .';
 }
 
 .titulo1 {
@@ -289,9 +289,9 @@ header.sticky {
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
-    "foto titulo titulo"
-    "foto descricao descricao"
-    "foto descricao descricao";
+    'foto titulo titulo'
+    'foto descricao descricao'
+    'foto descricao descricao';
   grid-area: titulo1;
 }
 
@@ -316,9 +316,9 @@ header.sticky {
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
-    "foto titulo titulo"
-    "foto descricao descricao"
-    "foto descricao descricao";
+    'foto titulo titulo'
+    'foto descricao descricao'
+    'foto descricao descricao';
   grid-area: titulo2;
 }
 
@@ -331,9 +331,9 @@ header.sticky {
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
-    "foto titulo titulo"
-    "foto descricao descricao"
-    "foto descricao descricao";
+    'foto titulo titulo'
+    'foto descricao descricao'
+    'foto descricao descricao';
 }
 
 .titulo4 {
@@ -345,9 +345,9 @@ header.sticky {
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
-    "foto titulo titulo"
-    "foto descricao descricao"
-    "foto descricao descricao";
+    'foto titulo titulo'
+    'foto descricao descricao'
+    'foto descricao descricao';
 }
 
 .titulo5 {
@@ -359,9 +359,9 @@ header.sticky {
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
-    "foto titulo titulo"
-    "foto descricao descricao"
-    "foto descricao descricao";
+    'foto titulo titulo'
+    'foto descricao descricao'
+    'foto descricao descricao';
 }
 
 .titulo6 {
@@ -373,9 +373,9 @@ header.sticky {
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
-    "foto titulo titulo"
-    "foto descricao descricao"
-    "foto descricao descricao";
+    'foto titulo titulo'
+    'foto descricao descricao'
+    'foto descricao descricao';
 }
 
 /* ====== *
@@ -426,7 +426,7 @@ header.sticky {
 }
 
 .road__box:before {
-  content: "";
+  content: '';
   position: absolute;
   top: -2px;
   left: -2px;
@@ -437,7 +437,7 @@ header.sticky {
 }
 
 .road__box:after {
-  content: "";
+  content: '';
   position: absolute;
   top: -2px;
   left: -2px;
