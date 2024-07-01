@@ -11,30 +11,30 @@ const scrollRevealOption = {
 };
 ScrollReveal().reveal('.elemento2', {
   ...scrollRevealOption,
-  delay: 1000,
+  delay: 500,
 });
 ScrollReveal().reveal('.elemento3', {
   ...scrollRevealOption,
-  delay: 1150,
+  delay: 500,
 });
 ScrollReveal().reveal('.elemento4', {
   ...scrollRevealOption,
-  delay: 1300,
+  delay: 500,
 });
 ScrollReveal().reveal('.elemento5', {
   ...scrollRevealOption,
-  delay: 1450,
+  delay: 500,
 });
 ScrollReveal().reveal('.elemento6', {
   ...scrollRevealOption,
-  delay: 1600,
+  delay: 500,
 });
 ScrollReveal().reveal('.elemento7', {
   ...scrollRevealOption,
-  delay: 1850,
+  delay: 500,
 });
 ScrollReveal().reveal('.elementox', {
   ...scrollRevealOption,
-  delay: 2000,
+  delay: 500,
   origin: 'bottom',
 });
