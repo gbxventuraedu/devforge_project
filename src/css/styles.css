@@ -556,6 +556,7 @@ section.portfolio .main-text h2 {
   width: 100%;
   border-radius: 0.5rem;
   display: block;
+  height: 17.5rem;
   transition: transform 0.5s;
 }
 
