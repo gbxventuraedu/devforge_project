@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:ital,wght@0,700;0,800;0,900;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+  --primary-color: #2a2a2a;
+  --second-color: #626262;
+  --third-color: #464646;
+  --orange-color: #e65100;
+  --blue-color: #1f3a93;
+  --light-gray: #a9a9a9;
+  --white: #ededed;
+  --text-color: #fff;
+}
+
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+  
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+text-decoration: none;
+list-style: none;
+scroll-behavior: smooth;
+}
+
+body {
+background-color: #01011d;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+font-family: 'Poppins', sans-serif;
+color: var(--orange-color);
+}
+
+.formulario {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, .5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px;
+    border-radius: 10px;
+}
+
+.formulario h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    text-align: center;
+}
+
+.adm {
+    position: relative;
+
+}
+
+.adm input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.adm label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    transition: 0.5s;
+}
+
+button{
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: var(--orange-color);
+    font-size: 16px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.5s;
+    margin-top: 40px;
+    background-color: var(--orange-color);
+    color: #fff;
+
+}
+
+button:hover{
+    background-color: #8b451e;
+    transform: scale(1.1);
+}
